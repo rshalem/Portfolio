@@ -1,0 +1,92 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome | imshalem</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/default.css' %}">
+
+
+</head>
+
+<body>
+    <section class="s1">
+        <div class="main-container">
+            <div class="nav-wrapper">
+                <div class="brand">
+                    <p class="brand-name">im<span><b>shalem</b></span></p>
+                </div>
+                <ul id="navigation">
+                    <li><a href="#">about</a></li>
+                    <li><a href="#social">projects</a></li>
+                    <li><a href="#">blog</a></li>
+                    <li><a href="#">theme</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="s2">
+        
+        <div class="center-column">
+            <div class="intro">
+                <img id="profile-pic" src="{% static 'images/animoji.jpg' %}">
+                <h1 class="intro-text">Hi, I'm Shalem !</h1>
+                <p class="short-about">I'm a Senior Machine Learning Associate at Amazon<br>
+                    and a Backend Developer</p>
+
+                <div class="link-block">
+                    <ul id="about-nav">
+                        <li><a href="#social">projects</a></li>
+                        <li><a href="#">my resume</a></li>
+                    </ul>   
+                </div>
+            </div>
+        </div>
+
+        
+    </section>
+
+    <section class="s4">
+        <div class="social-link-wrapper">
+            <div class="social-links">
+                <ul id="social">
+                    <li><a target="_blank" class="fa fa-linkedin" href="{{ profile.linkedin }}"></a></li>
+                    <li><a target="_blank" class="fa fa-github" href="{{ profile.github }}"></a></li>
+                    <li><a target="_blank" class="fa fa-instagram" href="{{ profile.instagram }}"></a></li>
+                    <li><a target="_blank" class="fa fa-twitter" href="{{ profile.instagram }}"></a></li>
+                    <li><a target="_blank" class="fa fa-google" href=""></a></li>
+
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="s3"> 
+        <div class="main-container">
+            <div class="project-wrapper">
+                <p class="work-heading">Some of my works</p>
+                    <div class="projects">
+                        {% for project in all_projects %}
+                            <a target="_blank" href="{{ project.github_repo }}"><div class="work">
+                            <div class="work-preview">
+                                <h4 class="project-title">{{ project.project_title }}</h4>
+                                <p class="project-intro">{{ project.project_description }}</p>
+                                <p class="language">{{ project.languages_used }}</p>
+                            </div></a>
+                        </div>
+                        {% endfor %}
+                    </div>
+
+                
+
+            </div>
+
+        </div>
+
+    </section>
+
+</body>
+</html>
