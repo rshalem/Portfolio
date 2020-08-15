@@ -221,54 +221,8 @@ p, h1, h2, h3, h4 {
     }
 }
 
-@media screen and (min-width:768px){
-    .main-container{
-        width: 80%;
-    }
-}
 
-@media screen and (max-width:1200px){
-    .projects{
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
-
-    .work{
-        width:auto;
-    }
-    .center-column{
-        margin-top: 10px;
-        width: 300px;
-        height: 400px;
-
-    }
-
-    .nav-wrapper{
-        display: flex;
-        flex-direction: column;
-    }
-
-    #navigation li{
-        font-size: 12px;
-    }
-
-    .intro-text{
-        text-align: center;
-        font-size: 15px;
-
-    }
-
-    .short-about{
-        text-align: center;
-        font-size: 13px;
-
-    }
-
-
-
-}
-
-@media screen and (min-width:768px){
+@media screen and (min-width : 768px) and (max-width : 1200px) {
     .projects{
         flex-direction: column;
         flex-wrap: wrap;
