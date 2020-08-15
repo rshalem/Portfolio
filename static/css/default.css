@@ -222,7 +222,7 @@ p, h1, h2, h3, h4 {
 }
 
 
-@media screen and (min-width : 768px) and (max-width : 1200px) {
+@media screen and (min-width : 375px) and (max-width : 1200px) {
     .projects{
         flex-direction: column;
         flex-wrap: wrap;
