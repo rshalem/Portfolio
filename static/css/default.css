@@ -5,6 +5,7 @@
     --aboutSectionColor: cornsilk;
     --workBorderColor: black;
     --aboutHoverColor: #e39b68;
+    --contactSectionColor: #b57c53;
 }
 
 html, body{
@@ -28,9 +29,14 @@ body * {
     background-color: var(--mainColor);
 }
 
+.s6{
+    background-color: floralwhite;
+}
+
 a{
     text-decoration: none;
     color: black;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .main-container{
@@ -166,24 +172,27 @@ p, h1, h2, h3, h4 {
     text-align: center;
 }
 
+.project-wrapper{
+    margin-bottom: 30px;
+}
 .projects{
+
     display:flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
 
 }
 
 .work{
-    border: 3px solid var(--workBorderColor);
+    flex: 0 0 25%;
     border-radius: 5px 5px 5px 5px;
-    width: 50%;
     margin: 10px;
     padding-left: 30px;
     padding-right:30px;
     padding-bottom: 20px;
-    -webkit-box-shadow: -3px 4px 5px 0px rgba(13,13,13,1);
-    -moz-box-shadow: -3px 4px 5px 0px rgba(13,13,13,1);
-    box-shadow: -3px 4px 5px 0px rgba(13,13,13,1);
-    
+    -webkit-box-shadow: -2px 4px 5px 0px rgba(181,180,179,1);
+    -moz-box-shadow: -2px 4px 5px 0px rgba(181,180,179,1);
+    box-shadow: -2px 4px 5px 0px rgba(181,180,179,1);
+
 }
 
 .work:hover{
@@ -215,6 +224,36 @@ p, h1, h2, h3, h4 {
     text-align: center;
 }
 
+#contact-wrapper{
+    padding-top: 10px;
+    text-align: center;
+}
+
+.contact-heading{
+    font-size: 18px;
+}
+
+.contact-info{
+    font-size: 14px;
+}
+
+.get-in-touch{
+    color: grey;
+}
+
+.footer{
+    text-align: center;
+    overflow: hidden;
+}
+
+.footer-content{
+
+    color: black;
+    font-size: 13px;
+    margin-top: 0;
+    padding-top: 10px;
+}
+
 @media screen and (max-width:1200px){
     .main-container{
         width: 80%;
@@ -223,6 +262,11 @@ p, h1, h2, h3, h4 {
 
 
 @media screen and (max-width : 1200px) {
+
+    .brand{
+        padding-top: 10px;
+    }
+
     .projects{
         flex-direction: column;
         flex-wrap: wrap;
@@ -231,6 +275,7 @@ p, h1, h2, h3, h4 {
     .work{
         width:auto;
     }
+
     .center-column{
         margin-top: 10px;
         width: 300px;
@@ -259,11 +304,14 @@ p, h1, h2, h3, h4 {
 
     }
 
-
-
 }
 
 @media screen and (max-width : 375px){
+
+    .brand{
+        padding-top: 10px;
+    }
+
     .projects{
         flex-direction: column;
         flex-wrap: wrap;

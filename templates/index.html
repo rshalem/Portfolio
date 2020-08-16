@@ -16,13 +16,12 @@
         <div class="main-container">
             <div class="nav-wrapper">
                 <div class="brand">
-                    <p class="brand-name">im<span><b>shalem</b></span></p>
+                    <a class="brand-name" href="{% url 'main:home' %}">im<span><b>shalem</b></span></a>
                 </div>
                 <ul id="navigation">
                     <li><a href="#">about</a></li>
                     <li><a href="#social">projects</a></li>
-                    <li><a href="#">blog</a></li>
-                    <li><a href="#">theme</a></li>
+                    <li><a href="#contact-wrapper">contact</a></li>
                 </ul>
             </div>
         </div>  
@@ -64,26 +63,50 @@
         </div>
     </section>
 
-    <section class="s3"> 
+    <section class="s3">
         <div class="main-container">
             <div class="project-wrapper">
-                <p class="work-heading">Some of my works</p>
-                    <div class="projects">
-                        {% for project in all_projects %}
-                            <a target="_blank" href="{{ project.github_repo }}"><div class="work">
-                            <div class="work-preview">
-                                <h4 class="project-title">{{ project.project_title }}</h4>
-                                <p class="project-intro">{{ project.project_description }}</p>
-                                <p class="language">{{ project.languages_used }}</p>
-                            </div></a>
-                        </div>
-                        {% endfor %}
+                <div class="work-heading">
+                    <p>Some of my works</p>
+                </div>
+
+                <div class="projects">
+                    {% for project in all_projects %}
+                        <a target="_blank" href="{{ project.github_repo }}"><div class="work">
+                        <div class="work-preview">
+                            <h4 class="project-title">{{ project.project_title }}</h4>
+                            <p class="project-intro">{{ project.project_description }}</p>
+                            <p class="language">{{ project.languages_used }}</p>
+                        </div></a>
                     </div>
+                    {% endfor %}
+                </div>
 
-                
+        </div>
 
+    </section>
+
+    <section class="s5">
+        <div class="main-container">
+            <div id="contact-wrapper">
+                <div class="contact-heading">
+                    <p>Let's Build Something Together</p>
+                </div>
+
+                <div class="contact-info">
+                    <p class="get-in-touch">GET IN TOUCH</p>
+                    <p><b>brocode.py@gmail.com</b></p>
+                    <p>Cheers !!!</p>
+                </div>
             </div>
 
+        </div>
+
+    </section>
+
+    <section class="s6">
+        <div class="footer">
+            <p class="footer-content">Made with ❤️ by <a target="_blank" href="https://www.instagram.com/brocode.py/">@brocode.py</a></p>
         </div>
 
     </section>
