@@ -1,5 +1,4 @@
 import os
-from portfolio.secret_settings import SECRET_KEY
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -9,7 +8,7 @@ DEBUG = False
 
 ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'imshalem.herokuapp.com']
 
-SECRET_KEY = SECRET_KEY
+SECRET_KEY = '4xn$cwrbjtss6lih53mcy=f3oh&oet(lqc%i@%_3fn!o0cmtgp'
 # Application definition
 
 INSTALLED_APPS = [
