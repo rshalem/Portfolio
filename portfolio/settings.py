@@ -5,7 +5,7 @@ from portfolio.secret_settings import SECRET_KEY
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'imshalem.herokuapp.com']
 
