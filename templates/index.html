@@ -19,7 +19,7 @@
                     <a class="brand-name" href="{% url 'main:home' %}">im<span><b>shalem</b></span></a>
                 </div>
                 <ul id="navigation">
-                    <li><a href="#">about</a></li>
+                    <li><a href="#contact-wrapper">about</a></li>
                     <li><a href="#social">projects</a></li>
                     <li><a href="#contact-wrapper">contact</a></li>
                 </ul>
@@ -33,13 +33,13 @@
             <div class="intro">
                 <img id="profile-pic" src="{% static 'images/animoji.png' %}">
                 <h1 class="intro-text">Hi, I'm Shalem !</h1>
-                <p class="short-about">I'm a Senior Machine Learning Associate at Amazon<br>
-                    and a Backend Developer</p>
+                <p class="short-about">I'm a Web Developer/Machine Learning  <br>
+                    Specialist with Applied Modelling Team at Amazon</p>
 
                 <div class="link-block">
                     <ul id="about-nav">
                         <li><a href="#social">projects</a></li>
-                        <li><a href="#">my resume</a></li>
+                        <li><a target="_blank" href="https://www.linkedin.com/in/shalem-singh-rajput-5b4843140/">linkedin</a></li>
                     </ul>   
                 </div>
             </div>
@@ -52,11 +52,9 @@
         <div class="social-link-wrapper">
             <div class="social-links">
                 <ul id="social">
-                    <li><a target="_blank" class="fa fa-linkedin" href="{{ profile.linkedin }}"></a></li>
                     <li><a target="_blank" class="fa fa-github" href="{{ profile.github }}"></a></li>
                     <li><a target="_blank" class="fa fa-instagram" href="{{ profile.instagram }}"></a></li>
-                    <li><a target="_blank" class="fa fa-twitter" href="{{ profile.instagram }}"></a></li>
-                    <li><a target="_blank" class="fa fa-google" href=""></a></li>
+                    <li><a target="_blank" class="fa fa-google" href="#"></a></li>
 
                 </ul>
             </div>
@@ -90,13 +88,21 @@
         <div class="main-container">
             <div id="contact-wrapper">
                 <div class="contact-heading">
-                    <p>Let's Build Something Together</p>
+                    <p>About</p>
                 </div>
 
                 <div class="contact-info">
-                    <p class="get-in-touch">GET IN TOUCH</p>
-                    <p><b>brocode.py@gmail.com</b></p>
-                    <p>Cheers !!!</p>
+                    <p>I am a self-taught Django developer with a bachelors
+                        degree, specializing in Backend Development.<br>
+                        I have always found coding intuitive and have pushed
+                        myself to learn and pursue it as a career. As someone
+                        who enjoys finding solutions to difficult problems,
+                        transforming ideas into reality, web development was
+                        an obvious path.<br>
+                        I'm a fast learner and can quickly integrate into a team
+                        providing value to the company & the customer with
+                        the knowledge I have.</p>
+                    
                 </div>
             </div>
 
@@ -104,12 +110,18 @@
 
     </section>
 
-    <section class="s6">
-        <div class="footer">
-            <p class="footer-content">Made with ❤️ by <a target="_blank" href="https://www.instagram.com/brocode.py/">@brocode.py</a></p>
+    <section class="s5">
+        <div class="main-container">
+            <div id="contact-wrapper">
+                <div class="contact-heading">
+                    <p style="font-size: 15px;">Mail me at <b>shalem000@gmail.com</b></p>
+                </div>
+            </div>
+
         </div>
 
     </section>
+
 
 </body>
 </html>
